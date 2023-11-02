@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home |Netflix</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+    <div class="nav">
+        <div class="nav-left">
+            <a href="index.html">
+            <img class="nav-logo" src="logo.png" alt="logo"></a>
+        </div>
+        <div class="nav-right">
+            <img class="nav-avatar" src="avatar.jpg" alt="photo">
+        </div>
+    </div>
+    <!--Banner-->
+    <div id="banner">
+        <div class="banner-contents">
+            <h1 id="banner-title"></h1>
+            <button id="banner-button">Play</button>
+            <button id="banner-button">My List</button>
+            
+        </div>
+        <p id="banner-description"></p>
+    </div>
+    <div class="banner-fadebottom"></div>
+    </header>
+    <!--Row-->
+    <div id="headrow">
+        <div class="row">
+            <h2 id="row-title"></h2>
+            <div class="row-poster"></div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener("scroll", function () { // Changed "Scroll" to "scroll"
+        let nav = document.querySelector(".nav");
+        nav.classList.toggle("active", window.scrollY > 0);
+    });
+
+    </script>
+</body>
+</html>
